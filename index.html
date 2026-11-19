@@ -311,7 +311,8 @@ input[type=range]{width:100%;accent-color:var(--red);}
 #loader.on{opacity:0;pointer-events:none;}
 html.shot #loader{display:none !important;}
 html.shot #wipe{display:none !important;}
-html.shot .page{animation:none !important;}
+html.shot .page{animation:none !important;transition:none !important;opacity:0 !important;}
+html.shot .page.active{opacity:1 !important;transform:none !important;}
 html.shot .anim{opacity:1 !important;transform:none !important;}
 html.shot .skill .fill{width:var(--w) !important;}
 @keyframes rot{to{transform:rotate(360deg)}}
